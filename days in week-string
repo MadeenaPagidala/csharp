@@ -1,0 +1,14 @@
+//Days in a week ,string array->foreach loop used
+using System;
+namespace Program8{
+    class Basic{
+        public static void Main(String[] args){
+            string[] weekDays;
+            weekDays=new[] {"Sun","Mon", "Tue", "Wed","Thu", "Fri", "Sat"};
+            Console.WriteLine("Days in a Week:");
+            foreach(string day in weekDays){
+                Console.Write(day+" ");
+            }
+        }
+    }
+}
