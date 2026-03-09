@@ -1,0 +1,27 @@
+//Sorted numbers in array
+using System;
+namespace Program9{
+    class Basic{
+        public static void Main(String[] args){
+            int[] arr1={13,57,9,24,68};
+            int temp;
+            Console.WriteLine("Array Elements:");
+            foreach(int num in arr1){
+                Console.Write(num+" ");
+            }
+            for(int i=0;i<5;i++){
+                for(int j=0;j<i;j++){
+                    if(arr1[j]>arr1[j+1]){
+                        temp=arr1[j];
+                        arr1[j]=arr1[j+1];
+                        arr1[j+1]=temp;
+                    }
+                }
+            }
+            Console.WriteLine("\nSorted Array Elements:");
+            foreach(int num in arr1){
+                Console.Write(num+" ");
+            }
+        }
+    }
+}
