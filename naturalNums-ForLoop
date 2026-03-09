@@ -1,0 +1,15 @@
+//Print natural numbers-for loop
+using System;
+namespace Program4{
+    class Basic{
+        public static void Main(String[] args){
+            int i,n;
+            Console.WriteLine("Print natural nums(limit):");
+            n=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Natural numbers are ");
+            for(i=1;i<=n;i++){
+                Console.Write("{0}, ",i);
+            }
+        }
+    }
+}
