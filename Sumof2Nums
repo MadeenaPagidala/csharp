@@ -1,0 +1,17 @@
+//Sum of 2 nums
+using System;
+namespace Program1{
+    class Basic{
+        public static void Main(String[] args){
+            Console.WriteLine("Hi");
+            //Sum of 2 nums
+            Console.WriteLine("Enter 2 nums:");
+            int a,b,s;
+            a=Convert.ToInt32(Console.ReadLine());
+            b=Convert.ToInt32(Console.ReadLine());
+            s=a+b;
+            Console.WriteLine("Sum of {0}, {1}: {2}",a,b,s);
+            
+        }
+    }
+}
