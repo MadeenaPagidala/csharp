@@ -1,0 +1,26 @@
+//Incremental or Decremental operator
+using System;
+namespace Program6{
+class Basic
+{
+    static public void Main()
+    {
+        int a = 5;
+      	// pre-increment
+        Console.WriteLine("++a returns: " + ++a);
+      	// post-increment
+	Console.WriteLine("a++ returns: " + a++);
+      	Console.WriteLine("Final value of a: " + a);
+      
+      	Console.WriteLine();
+      
+        // pre-decrement
+      	Console.WriteLine("--a returns: " + --a);
+      
+      	// post-decrement
+      	Console.WriteLine("a-- returns: " + a--);
+      	
+      	Console.WriteLine("Final value of a: " + a);
+    }
+  }
+}
