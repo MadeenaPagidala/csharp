@@ -1,0 +1,31 @@
+//largest,smallest in array
+using System;
+namespace Program10{
+    class Basic{
+        public static void Main(String[] args){
+            int size;
+            Console.Write("Enter size of array:");
+            size=Convert.ToInt32(Console.ReadLine());
+            int[] arr=new int[size];
+            Console.WriteLine("Enter elements of array:");
+            for(int i=0;i<size;i++){
+                arr[i]=Convert.ToInt32(Console.ReadLine());
+            }
+            Console.WriteLine("\nElements of array:");
+            foreach (int num in arr){
+                Console.Write(num+", ");
+            }
+            int largest=arr[0];
+            int smallest=arr[0];
+            for(int i=0;i<size;i++){
+                if(arr[i]>largest){
+                    largest=arr[i];
+                }
+                if(arr[i]<smallest){
+                    smallest=arr[i];
+                }
+            }
+            Console.WriteLine("\nLargest: "+largest+" Smallest: "+smallest);
+        }
+    }
+}
