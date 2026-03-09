@@ -1,0 +1,19 @@
+//Vote or not?
+using System;
+namespace Program2{
+    class Basic{
+        public static void Main(String[] args){
+            int age,d;
+            Console.Write("Enter age:");
+            age=Convert.ToInt32(Console.ReadLine());
+            if(age>=18){
+                Console.Write("Eligible to Vote.");
+            }
+            else{
+                Console.WriteLine("Not eligible to Vote.");
+                d=18-age;
+                Console.WriteLine("Need to wait for {0} years to vote.",d);
+            }
+        }
+    }
+}
