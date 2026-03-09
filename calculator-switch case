@@ -1,0 +1,44 @@
+//calculator-SWITCH CASE
+using System;
+namespace Program3{
+    class Calculator{
+        public static void Main(String[] args){
+            int a,b;
+            Console.WriteLine("Enter 2 nums:");
+            a=Convert.ToInt32(Console.ReadLine());
+            b=Convert.ToInt32(Console.ReadLine());
+            char op;
+            Console.WriteLine("Enter operator (+,-,*,/):");
+            op=Convert.ToChar(Console.ReadLine());
+            if(op=='+' || op=='-' || op=='*' || op=='/'){
+                switch(op){
+                    case '+':
+                    Console.WriteLine("Sum={0}",a+b);
+                    break;
+                    case '-':
+                    Console.WriteLine("Difference={0}",a-b);
+                    break;
+                    case '*':
+                    Console.WriteLine("Multiply={0}",a*b);
+                    break;
+                    case '/':
+                    if(a>b){
+                        Console.WriteLine("Division={0}",a/b);
+                        break;
+                    }else if(b>a){
+                        Console.WriteLine("Division={0}",b/a);
+                        break;
+                    }
+                    else{
+                        Console.WriteLine("Invalid Input");
+                        break;
+                    }
+                    
+                    default:
+                    Console.WriteLine("Invalid");
+                    break;
+                }
+            }
+        }
+    }
+}
